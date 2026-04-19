@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-6xl mx-auto px-6 py-16;
+}
+
+.section {
+  @apply mb-20;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+  letter-spacing: -0.05em;
+}
+
+h1 {
+  @apply text-4xl md:text-6xl font-bold mb-4 text-center md:text-left;
+}
+
+h2 {
+  @apply text-3xl md:text-5xl font-semibold mb-6;
+}
+
+h3 {
+  @apply text-xl md:text-2xl font-medium mb-2;
+}
+
+p {
+  @apply text-base md:text-lg text-[#4a4a4a] mb-6 max-w-3xl;
+}
+
+.btn {
+  @apply bg-[#e66000] text-white px-6 py-3 rounded-lg font-medium shadow-sm hover:bg-[#ff8c42] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#ff8c42] focus:ring-offset-2;
+}
+
+.card {
+  @apply bg-[#e9e5dd] p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300;
+}
+
+.card:hover {
+  @apply transform translate-y-[-4px];
+}
+
+form {
+  @apply space-y-4;
+}
+
+label {
+  @apply block text-sm font-medium text-[#1a2e1a];
+}
+
+input,
+textarea {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#e66000] focus:border-transparent transition-all duration-300;
+}
+
+input:focus,
+textarea:focus {
+  @apply shadow-sm;
+}
+
+input[type="text"],
+input[type="email"] {
+  @apply mb-4;
+}
+
+.toast {
+  @apply fixed bottom-4 right-4 bg-[#1a2e1a] text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-fade-in;
+}
+
+.toast.error {
+  @apply bg-red-700;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}

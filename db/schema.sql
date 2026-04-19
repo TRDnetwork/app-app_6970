@@ -1,0 +1,3 @@
+-- No database required — contact form handled by Email Agent via Vercel serverless function (api/contact.ts)
+-- All site content is static; no user accounts, file uploads, or dynamic data storage needed
+-- Supabase is not used for auth, storage, or functions in this implementation

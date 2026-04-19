@@ -1,0 +1,2 @@
+-- Not applicable — contact form email delivery is handled by Email Agent via Vercel serverless function at api/contact.ts
+-- This function is not needed in Supabase Edge Functions
